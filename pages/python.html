@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../styles/style.css" crossorigin="anonymous" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+
+  <!-- style questions -->
+  <link rel="stylesheet" href="../styles/stylequiz.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles/stylefont.css" />
+
+  <title>Python : CodeQuizHub</title>
+  <style>
+    body {
+      background-color: #282A36;
+      color: #f8f9fa;
+      font-family: 'Rubik', sans-serif;
+    }
+    .navbar-brand span {
+      color: #3a8057 !important;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #f8f9fa !important;
+    }
+    h2 {
+      color: #f8f9fa;
+    }
+    .jumbotron {
+      background-color: #44475a !important;
+      color: #f8f9fa;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 20px;
+    }
+    .quiz-header h3,
+    .quiz-header ul,
+    .quiz-header button {
+      color: #f8f9fa;
+    }
+    .quiz-header ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .quiz-header li {
+      margin: 10px 0;
+    }
+    .quiz-header input[type='radio'] {
+      margin-right: 10px;
+    }
+    .btn-dark {
+      background-color: #6272a4 !important;
+      color: #f8f9fa !important;
+      border: none;
+    }
+    .btn-dark:hover {
+      background-color: #8be9fd !important;
+      color: #282A36 !important;
+    }
+    footer {
+      background-color: #44475a !important;
+      color: #f8f9fa !important;
+      padding: 20px;
+      text-align: center;
+    }
+    .navbar-text {
+      color: #f8f9fa;
+    }
+    hr {
+      height: 2px;
+      border-width: 0;
+      background-color: rgb(58, 128, 87);
+    }
+    @media (max-width: 768px) {
+      .jumbotron {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <a class="navbar-brand mx-4" href="../ind1.html">
+      <span style="font-weight: bolder; font-size: 30px; font-family: 'Courier New', Courier, monospace;">CodeQuizHub</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mx-4">
+        <li class="nav-item">
+          <a class="nav-link" href="../ind1.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./playquiz.html">Quizzes</a>
+        </li>
+      </ul>
+      <span class="navbar-text mx-4">
+        <!-- <a
+              href="https://github.com/ashishalf/quizhunt.github.io/blob/master/CONTRIBUTE.md" target="_blank"
+              ><button class="btn btn-light btn-md">
+                <i
+                  class="fa-brands fa-github mx-2"
+                  style="font-size: 20px"
+                ></i></button></a -->
+      ></span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="text-center mb-4">Python Quiz</h2>
+
+    <div class="jumbotron">
+      <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h3 id="question">Question</h3>
+          <ul class="unorderlist">
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer</label>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-dark" id="submit">Submit</button>
+      </div>
+      <center>
+        <label for="text" style="margin-top: 30px;">More Quizzes are here -
+          <a href="./playquiz.html">Click Here</a>
+        </label>
+      </center>
+    </div>
+  </div>
+  <br>
+
+  <footer>
+    <div class="b-example-divider"></div>
+
+    <div class="bg-dark text-secondary px-4 py-3 ">
+      <div class="py-5 text-center">
+        <h1 class="fs-5 mb-4">
+          <span style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; font-size:50px;">CodeQuizHub</span>
+        </h1>
+        <!-- <div>
+          <a href="https://www.producthunt.com/posts/quizhunt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-quizhunt" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=385615&theme=light" alt="QuizHunt - Be&#0032;ready&#0046;&#0032;Be&#0032;smart&#0046;&#0032;Be&#0032;noticed&#0033; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+        </div> -->
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div>
+          <span class="navbar-text mx-4">
+            <!-- <a
+            href="https://github.com/ashishalf/quizhunt.github.io/blob/master/CONTRIBUTE.md" target="_blank"
+            ><button class="btn btn-light btn-md">
+              Contribute to QuizHunt
+              <i
+                class="fa-brands fa-github mx-2"
+                style="font-size: 20px"
+              ></i></button></a -->
+          </span>
+        </div>
+      </div>
+
+      <hr />
+      <p class="text-center">© CodeQuizHub 2024 | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script src="../quizzes/pythonquiz.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../scripts/jquery-3.2.1.js" crossorigin="anonymous"></script>
+  <script src="../scripts/popper.js" crossorigin="anonymous"></script>
+  <script src="../scripts/bootstrap.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

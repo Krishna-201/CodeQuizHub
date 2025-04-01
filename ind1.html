@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="QuizHunt is a quiz website that offers quizzes on programming languages such as C, C++, Java, Linux, and operating systems."
+    />
+    <meta
+      name="keywords"
+      content="quiz, website, programming languages, C, C++, Java, Linux, operating systems"
+    />
+    <meta name="author" content="QuizHunt" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ775/xZtLC3eC5E/7iUOpM0U6D0Jp6M/y4V"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/stylefont.css" />
+
+    <title>CodeQuizHub</title>
+    <style>
+      body {
+        background-color: #282A36;
+        color: #f8f9fa;
+        text-align: center;
+      }
+      .navbar-brand span {
+        color: #f8f9fa !important;
+      }
+      .header {
+        background-color: #44475a !important;
+      }
+      .header h1, .header h3, .header p {
+        color: #f8f9fa !important;
+      }
+      .header .btn-light {
+        color: #282A36 !important;
+        background-color: #f8f9fa !important;
+        transition: all 0.3s ease;
+      }
+      .header .btn-light:hover {
+        color: #f8f9fa !important;
+        background-color: #6272a4 !important;
+        transform: scale(1.1);
+      }
+      .quiz-card {
+        background-color: #6272a4 !important;
+        border: none !important;
+        color: #f8f9fa !important;
+        text-align: center;
+        margin: 15px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        flex-basis: calc(50% - 30px); /* Adjust the width of the quiz cards */
+        transition: all 0.3s ease;
+      }
+      .quiz-card:hover {
+        background-color: #8be9fd !important;
+        transform: scale(1.05);
+      }
+      footer {
+        background-color: #44475a !important;
+      }
+      footer p {
+        color: #f8f9fa !important;
+      }
+      .nav-link, .navbar-brand {
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      .nav-link:hover, .navbar-brand:hover {
+        color: #fd8b8b !important;
+        transform: scale(1.1);
+      }
+      .quiz-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 680px) {
+        .quiz-card {
+          flex-basis: calc(100% - 30px); /* Adjust the width of the quiz cards */
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand mx-4" href="./index.html">
+        <span
+          style="
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+          "
+          >CodeQuizHub</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mx-4">
+          <li class="nav-item active">
+            <a class="nav-link" href="./ind1.html" style="color: red; font-size: 20px; font-weight: bold; padding: 10px 15px;">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="pages/playquiz.html" style="color:red;font-size:20px; font-weight: bold; padding: 10px 15px;">Quizzes</a>
+        </li>        
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="header px-4 py-5 mb-5">
+      <div class="" style="height: 500px; border-radius: 20px">
+        <div
+          class="headtext d-flex px-4 align-items-center justify-content-center h-100"
+        >
+          <div>
+            <h1 class="mb-3" style="text-shadow: 4px 4px 8px #000000">
+              Be ready. Be smart. Be noticed!
+            </h1>
+            <h3 class="mb-2" style="color: rgba(248, 249, 250, 0.8);">
+              Where a smart answer won't get you fired!
+            </h3>
+            <p class="mb-3">
+              CodeQuizHub brings you quizzes to simplify tech learning.<br />
+              Just play a quiz.
+            </p>
+            <a class="btn btn-light btn-md" href="pages/mega.html">Quick Start</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <center><h2>Popular Quizzes</h2></center>
+    <br />
+    <div class="container">
+      <div class="quiz-container">
+        <div class="quiz-card">
+          <img
+            width="96"
+            height="96"
+            src="https://img.icons8.com/fluency/144/c-programming.png"
+            alt="c-programming"
+          />
+          <p>C Quiz</p>
+          <a href="pages/clanguage.html" class="btn btn-dark px-4">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <img
+            width="96"
+            height="96"
+            src="https://img.icons8.com/fluency/96/c-plus-plus-logo.png"
+            alt="c-plus-plus-logo"
+          />
+          <p>C++ Quiz</p>
+          <a href="pages/cpp.html" class="btn btn-dark px-4">Start</a>
+        </div>
+
+        <div class="quiz-card">
+          <img
+            width="96"
+            height="96"
+            src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png"
+            alt="java-coffee-cup-logo--v1"
+          />
+          <p>Java Quiz</p>
+          <a href="pages/java.html" class="btn btn-dark px-4">Start</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5">
+      <p>© CodeQuizHub 2024 | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHT

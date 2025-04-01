@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#2EC4B6"/>
+
+  <!-- Code Icon -->
+  <path fill="#FFF" d="M50 50h40v10H50zM50 60h10v10H50zM80 60h10v20H80zM90 60h10v10H90zM100 50h10v20h-10z"/>
+
+  <!-- Text -->
+  <text x="150" y="60" fill="#FFF" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Code</text>
+  <text x="290" y="60" fill="#FFF" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Hub</text>
+</svg>
